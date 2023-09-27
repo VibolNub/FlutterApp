@@ -13,7 +13,7 @@ class NinjaCard extends StatelessWidget {
       backgroundColor: Colors.grey.shade800,
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('Ninja ID'),
+        title: const Text('Ninja ID Card'),
         backgroundColor: Colors.grey.shade700,
       ),
       body: const Padding(
