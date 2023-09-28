@@ -1,21 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:world_time/pages/home.dart';
+import 'package:world_time/pages/loading.dart';
+import 'package:world_time/pages/choose_location.dart';
+import 'package:http/http.dart';
 
-void main() => runApp(const MaterialApp(
+void main() => runApp( MaterialApp(
   debugShowCheckedModeBanner: false,
-  home: WorldTime(),
+  home: Loading(),
+  // initialRoute: '/location',
+  // routes: {
+  //   '/':(context) => Loading(),
+  //   '/home':(context) => Home(),
+  //   '/location':(context) => ChooseLocation(),
+  // },
 ));
 
-class WorldTime extends StatefulWidget {
-  const WorldTime({super.key});
-
-  @override
-  State<WorldTime> createState() => _WorldTimeState();
-}
-
-class _WorldTimeState extends State<WorldTime> {
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
 
